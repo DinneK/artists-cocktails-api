@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const { request, response } = require("express");
+// const { request, response } = require("express");
 
 app.use(cors());
 
@@ -493,7 +493,7 @@ app.locals.artists = [
 app.get("/api/v1/artists", (request, response) => {
   const artists = app.locals.artists;
 
-  response.json({ resorts });
+  response.json({ artists });
 });
 
 app.listen(app.get("port"), () => {
