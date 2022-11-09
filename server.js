@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const { request, response } = require("express");
 
 app.use(cors());
 
@@ -25,9 +26,9 @@ app.locals.artists = [
     main_cocktail_liqour: "Gin",
     cocktail_name: "The Jackson Pollock Cocktail",
     artist_liquor_fact:
-      "Pollock had a trouble with alcohol, rather than drinking like Pollock, perhaps have a drink inspired by his work.",
+      "Pollock had trouble with alcohol, rather than drinking like Pollock, perhaps have a drink inspired by his work.",
     ingredients:
-      "1.75 oz gin, 0.75 oz fresh grapefruit juice, 0.75 oz simple syrup, 1 tbsn sparkling wine, 3 drops of chilled basil oil to garnish",
+      "1.75 oz Gin, 0.75 oz Fresh Grapefruit Juice, 0.75 oz Simple Syrup, 1 tbsn Sparkling Wine, To garnish 3 drops of chilled Basil Oil",
     instructions:
       "Pre-chill a cocktail glass by placing it into the freezer for 5 minutes. Add 3 drops of the basil oil into the prepared glass and then set aside. Place the gin, grapefruit juice and simple syrup into a cocktail shaker filled with ice. Vigorously shake the mixture for 35 seconds and then add the sparkling wine. Strain the mixture into the prepared cocktail glass and then serve immediately.",
     cocktail_image:
@@ -53,7 +54,7 @@ app.locals.artists = [
     ingredients:
       "2 oz Mijenta Blanco Tequila, .75 oz Strawberry or Hibiscus Syrup, 1 oz Fresh Lime Juice, .25 oz Creme De Cacao",
     instructions:
-      "Shake All Ingredients Vigorously with Plenty of Ice, Strain into a Coupe or Martini Glass, Garnish with Edible Flowers",
+      "Shake all ingredients vigorously with plenty of ice. Strain into a coupe or martini glass. Garnish with edible flowers",
     cocktail_image:
       "https://i1.wp.com/hombre1.com/wp-content/uploads/2020/09/Mijenta-Fridas-Flowers-2-for-HOMBRE-Magazine.jpg?w=396&ssl=1",
   },
@@ -66,16 +67,16 @@ app.locals.artists = [
     painting_image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/%28Albi%29_Rousse_%28La_Toilette%29_-_1889_-_Henri_de_Toulouse-Lautrec_-_Mus%C3%A9e_d%27Orsay%2C_Paris.jpg/1200px-%28Albi%29_Rousse_%28La_Toilette%29_-_1889_-_Henri_de_Toulouse-Lautrec_-_Mus%C3%A9e_d%27Orsay%2C_Paris.jpg",
     artist_fact:
-      "His professional life lasted only 19 years. Yet in this time he made 737 canvas paintings, 275 watercolours, 363 prints and posters, and 5,084 drawings as well as some ceramics and stained glasses - and countless others since lost to history.",
+      "His professional life lasted only 19 years. Yet in this time he made 737 canvas paintings, 275 watercolours, 363 prints and posters, and 5,084 drawings as well as some ceramics and stained glasses, as well as, countless other pieces since lost to history.",
     style: "Post-Impressionism",
     painting_year: 1889,
     favorite_liquor: "Absinthe",
     main_cocktail_liqour: "Absinthe",
     cocktail_name: "Earthquake",
     artist_liquor_fact:
-      "Toulouse-Lautrec was an alcoholic, eventually graduating from beer and wine to hard liquors such as the highly-strong liquor absinthe. In fact, the invention of the “Earthquake” cocktail is attributed to him: half absinthe, half cognac (don’t try this one at home).",
+      "Toulouse-Lautrec was an alcoholic, eventually graduating from beer and wine to hard liquors such as the incredibly strong liquor absinthe. In fact, the invention of the “Earthquake” cocktail is attributed to him (don’t try this one at home).",
     ingredients:
-      "1 oz. Gin, 1 oz. Bourbon/Whiskey, 1 oz. Absinthe, Garnish with a lemon twist",
+      "1 oz Gin, 1 oz Bourbon/Whiskey, 1 oz Absinthe, Garnish with a Lemon Twist",
     instructions:
       "Pour the ingredients into a cocktail shaker. Add ice. Now, shake it. Pour it into a wine goblet. Take a swig and feel the earth shake beneath you.",
     cocktail_image:
@@ -90,7 +91,7 @@ app.locals.artists = [
     painting_image:
       "https://www.guggenheim.org/wp-content/uploads/1923/01/72.2020_ph_web_2.jpg",
     artist_fact:
-      "When Joan Miró was only seven years old, his career as an artist was already taking off. He generally did quite poorly in primary school, although not during the drawing classes he attended, where he already showed the signs of his ability – his earliest surviving drawings date from 1901! ",
+      "When Joan Miró was only seven years old, his career as an artist was already taking off. He generally did quite poorly in primary school, although not during the drawing classes he attended, where he already showed the signs of his ability. His earliest surviving drawings date from 1901!",
     style: "Surrealism",
     painting_year: 1924,
     favorite_liquor: "N/A",
@@ -99,9 +100,9 @@ app.locals.artists = [
     artist_liquor_fact:
       "He didn’t booze or womanize; he didn’t experiment with mind-altering substances for fear of damaging his mind.",
     ingredients:
-      "1 oz. Dubonnet Rouge, 1 oz. Grand Marnier, 1 oz. Scotch, Garnish with a cherry",
+      "1 oz Dubonnet Rouge, 1 oz Grand Marnier, 1 oz Scotch, Garnish with a Cherry",
     instructions:
-      "POUR ALL INGREDIENTS INTO MIXING GLASS FILLED WITH ICE, STIR, STRAIN INTO COCKTAIL GLASS. GARNISH WITH A RED CHERRY.",
+      "Pour all ingredients into a mixing glass filled with ice. Stir. Strain into a cocktail glass. Garnish with a red cherry.",
     cocktail_image:
       "http://epicurevietnam.com/Data/Sites/1/media/bar_club/othercities/tippling-club/poker-game-840x600.jpg",
   },
@@ -111,7 +112,8 @@ app.locals.artists = [
     born: "12/18/1950",
     died: "N/A",
     painting_title: "Pianist",
-    painting_image: "pianoplayer1.jpg",
+    painting_image:
+      "https://cdn.shopify.com/s/files/1/0456/7341/4678/products/pianoplayer1_1.jpg?v=1667969516",
     artist_fact:
       "Kopelevich is quoted as saying, 'I paint because I need to paint. My tools are paper, pencils, children's finger paints, and India ink.  There is always a distance between how I want my painting to look and how it actually does. I am trying to paint music in my pictures. I am trying to freeze a moment.'",
     style: "Modern Surrealism",
@@ -121,7 +123,7 @@ app.locals.artists = [
     cocktail_name: "White Russian",
     artist_liquor_fact:
       "Not a huge boozer, Irina Kopelevich enjoys the occasional cocktail.",
-    ingredients: "2 oz. vodka, 1 oz. Kahlúa, 1 splash heavy cream",
+    ingredients: "2 oz Vodka, 1 oz Kahlúa, 1 splash Heavy Cream",
     instructions:
       "Add the vodka and Kahlúa to a rocks glass filled with ice. Top with the heavy cream and stir.",
     cocktail_image:
@@ -145,7 +147,7 @@ app.locals.artists = [
     artist_liquor_fact:
       "Not much exists about Touko Laaksonen's, better known by the pseudonym Tom of Finland, drinking habits.",
     ingredients:
-      "2 1/2 oz. Tom of Finland vodka, 1/2 oz. dry vermouth, 1 dash orange bitters, Garnish: lemon twist",
+      "2 1/2 oz Tom of Finland Vodka, 1/2 oz Dry Vermouth, 1 dash Orange Bitters, Garnish Lemon Twist",
     instructions:
       "Add the vodka, dry vermouth and orange bitters into a mixing glass with ice and stir until very well-chilled, about 20 to 30 seconds. Strain into a chilled cocktail glass. Garnish with a lemon twist.",
     cocktail_image:
@@ -169,9 +171,9 @@ app.locals.artists = [
     artist_liquor_fact:
       "Although, a believer in the occult, not much informations exists about Klint's drink preferences. This drink is inspired by the occult.",
     ingredients:
-      "For the colloidal silver: 3 1/3 ounces filtered water, 2 pieces of solid silver wire. For the Silver Bullet: 1 1/4 oz. gin, 1/2 oz. Kummel Wolfschmidt liqueur, 1/2 oz colloidal silver",
+      "For the colloidal silver:, 3 1/3 oz Filtered Water, 2 pieces of solid silver wire, For the Silver Bullet:, 1 1/4 oz Gin, 1/2 oz Kummel Wolfschmidt liqueur, 1/2 oz Colloidal Silver",
     instructions:
-      "For the colloidal silver, place the water in a glass and cover with cling film. At opposite ends of the glass, push the silver rods through the cling so that they are half exposed and half submerged. Attach a 6-volt battery to the exposed ends of the rods and set a timer for 30 minutes. Remove the battery and rods once time is completed and store water in a vacuum-sealed bag. Make sure silver used is solid and not plated silver. Then, combine the gin, Kummel Wolfschmidt, and colloidal silver in a bottle and store in the fridge to chill before service. Serve the mix directly from the bottle in a chilled large liqueur glass with hairy stem.",
+      "For the colloidal silver, place the water in a glass and cover with cling film. At opposite ends of the glass, push the silver rods through the cling film so that they are half exposed and half submerged. Attach a 6-volt battery to the exposed ends of the rods and set a timer for 30 minutes. Remove the battery and rods once time is completed and store water in a vacuum-sealed bag. Make sure silver used is solid and not plated silver. Then, combine the gin, Kummel Wolfschmidt, and colloidal silver in a bottle and store in the fridge to chill before service. Serve the mix directly from the bottle in a chilled large liqueur glass with stem.",
     cocktail_image:
       "https://munchies-images.vice.com/wp_upload/silver-bullet.jpg?crop=0.7485380116959064xw:1xh;center,center&resize=500:*",
   },
@@ -193,7 +195,7 @@ app.locals.artists = [
     artist_liquor_fact:
       "Known more for her art than her drinking habits, Sherman's cocktail is inspired by her work.",
     ingredients:
-      "Cocoa powder, for rimming, 2 oz. chocolate liqueur, plus more for rimming, 1 oz. vodka, 1 oz. half-and-half",
+      "Cocoa powder for rimming, 2 oz Chocolate Liqueur, plus more for rimming, 1 oz Vodka, 1 oz Half-and-Half",
     instructions:
       "Add a few tablespoons chocolate liqueur to a small rimmed plate. Add a few tablespoons cocoa powder to another small plate and whisk briefly to break up the lumps. Dip the rim of a martini glass into the liqueur then into the cocoa. Set aside. Add the chocolate liqueur, vodka, and half-and-half to a cocktail shaker filled with ice and shake for a good 20 seconds. Pour into rimmed martini glass",
     cocktail_image:
@@ -217,7 +219,7 @@ app.locals.artists = [
     artist_liquor_fact:
       "Inspired by Thomas' mother, Sandra Bush, this cocktail will carry you back to the 70's",
     ingredients:
-      "1-1/2 oz Fords gin, 3/4 oz. fresh lemon juice, 1 oz simple syrup, 4 oz club soda, Orange slice for garnish, Cherry for garnish",
+      "1 1/2 oz Fords Gin, 3/4 oz Fresh Lemon Juice, 1 oz Simple Syrup, 4 oz Club Soda, Garnish Orange Slice, Garnish Cherry",
     instructions:
       "Shake the first three ingredients with ice and strain into a Collins glass. Add the soda and stir. Garnish with the orange slice and cherry.",
     cocktail_image:
@@ -241,7 +243,7 @@ app.locals.artists = [
     artist_liquor_fact:
       "Frankenthaler's work was effervescent, shouldn't your drink be to?",
     ingredients:
-      "1 sugar cube, 2-3 dashes Angostura bitters, brut champagne garnish lemon twist",
+      "1 Sugar Cube, 2-3 dashes Angostura Bitters, Brut Champagne, Garnish Lemon Twist",
     instructions:
       "Place a sugar cube in a chilled champagne flute, lash it with 2 or 3 dashes of bitters, fill the glass with brut champagne, and squeeze a lemon twist on top.",
     cocktail_image:
@@ -256,18 +258,18 @@ app.locals.artists = [
     painting_image:
       "https://www.edwardhopper.net/images/paintings/newyork-movie.jpg",
     artist_fact:
-      "The themes of the tensions between individuals and the conflict between tradition and progress in both rural and urban settings, are motif that Edward Hopper always returns to. His choices of subject matter seem to have been somewhat unpredictable, since they were part of his constant battle with the chronic boredom that often stifled his urge to paint.",
+      "The themes of the tensions between individuals and the conflict between tradition and progress in both rural and urban settings, are motifs that Edward Hopper always returns to. His choices of subject matter seem to have been somewhat unpredictable, since they were part of his constant battle with the chronic boredom that often stifled his urge to paint.",
     style: "Ashcan School",
     painting_year: 1939,
-    favorite_liquor: "American Whisky",
+    favorite_liquor: "American Whiskey",
     main_cocktail_liqour: "Bourbon",
     cocktail_name: "Manhattan Nighthawk",
     artist_liquor_fact:
-      "As seen in many of paintings, Hopper did not give much thought to food or drink. Even in his Paris days he liked to keep things simple.",
+      "As seen in many of his paintings, Hopper did not give much thought to food or drink. Even in his Paris days he liked to keep things simple.",
     ingredients:
-      "4–5 ice cubes, 2 measures rye whisky or bourbon, 1 measure extra dry vermouth, 4 dashes Angostura bitters, 1 maraschino cherry, to garnish",
+      "4–5 Ice Cubes, 2 oz Rye Whiskey or Bourbon, 1 oz Extra Dry Vermouth, 4 dashes Angostura Bitters, Garnish 1 Maraschino Cherry",
     instructions:
-      "Put the ice cubes into a mixing glass, then add the whiskey (or bourbon), vermouth and bitters and stir. Strain into a chilled Martini glass, garnish with the maraschino cherry and serve.",
+      "Put the ice cubes into a mixing glass, then add the whiskey (or bourbon), vermouth and bitters and stir. Strain into a chilled martini glass, garnish with the maraschino cherry and serve.",
     cocktail_image:
       "https://www.acouplecooks.com/wp-content/uploads/2020/03/Manhattan-Cocktail-059s2.jpg",
   },
@@ -289,9 +291,9 @@ app.locals.artists = [
     artist_liquor_fact:
       "Inpired by Klimt's The Kiss, A Sweet Embrace is a cocktail for those who love the idea of love.",
     ingredients:
-      "1 oz Limoncello, 3 oz champagne, 2 oz sparkling water, Slice of lemon rind, rose petals and lavender sprigs for garnish, Sugar for rim",
+      "1 oz Limoncello, 3 oz Champagne, 2 oz Sparkling Water, Slice of Lemon Rind, Garnish Rose Petals and Lavender Sprigs, Sugar for rim",
     instructions:
-      "Rub a lemon wedge on the rim of the glass and roll in sugar. Combine Limoncello, champagne, and sparkling water. Add rose petals and a sprog of lavender for garnish.",
+      "Rub a lemon wedge on the rim of the glass and roll in sugar. Combine Limoncello, champagne, and sparkling water. Add rose petals and a sprig of lavender for garnish.",
     cocktail_image:
       "https://www.insidetherustickitchen.com/wp-content/uploads/2018/03/limoncello-cocktail-final-2-740x1110-inside-the-rustic-kitchen.jpg",
   },
@@ -300,7 +302,7 @@ app.locals.artists = [
     artist_name: "Tamara Łempicka",
     born: "5/16/1898",
     died: "3/18/1980",
-    painting_title: "Portrait of Mrs Boucard",
+    painting_title: "Portrait of Mrs. Boucard",
     painting_image:
       "https://uploads0.wikiart.org/images/tamara-de-lempicka/portrait-of-mrs-boucard-1931.jpg!Large.jpg",
     artist_fact:
@@ -313,7 +315,7 @@ app.locals.artists = [
     artist_liquor_fact:
       "She was a workaholic, permitting interruptions in her nine-hour painting sessions only for such necessities as champagne, a massage and a bath.",
     ingredients:
-      "1 1/2 ounces vodka, 1/2 ounce triple sec or Grand Marnier, 1/2 ounce cranberry juice, 1/2 ounce fresh squeezed lime juice, Dash simple syrup or agave, Ice, 2 ounces chilled dry champagne or sparkling wine",
+      "1 1/2 oz Vodka, 1/2 oz Triple Sec or Grand Marnier, 1/2 oz Cranberry Juice, 1/2 oz Fresh Squeezed Lime Juice, Dash Simple Syrup or Agave, Ice, 2 ounces chilled dry Champagne or Sparkling Wine",
     instructions:
       "Combine vodka, triple sec, cranberry juice, lime juice, and ice in a cocktail shaker. Shake until very cold. Taste and if the mixture seems to tart, add a dash of simple syrup or agave. Pour into a chilled martini glass then top with champagne or sparkling wine.",
     cocktail_image:
@@ -327,7 +329,7 @@ app.locals.artists = [
     painting_title: "The Son of Man",
     painting_image: "https://images.masterworksfineart.com/magritte3112-1.jpg",
     artist_fact:
-      "In a scandalous subtext, alongside his professional line of work, Magritte is believed to have created forgeries of pieces by the likes of Picasso, Titian, Ernst and Chirico – as well as reproducing his own works, in what some critics consider a “subversive strategy against his official oeuvre”.",
+      "In a scandalous subtext, alongside his professional line of work, Magritte is believed to have created forgeries of pieces by the likes of Picasso, Titian, Ernst and Chirico, as well as reproducing his own works, in what some critics consider a “subversive strategy against his official oeuvre”.",
     style: "Surrealism",
     painting_year: 1964,
     favorite_liquor: "N/A",
@@ -336,7 +338,7 @@ app.locals.artists = [
     artist_liquor_fact:
       "Magritte loved a good time and One Bad Apple is as playful as he was.",
     ingredients:
-      "1 oz whiskey, 3 oz apple juice, 1/2 oz honey simple syrup, Granny Smith apple slice for garnish",
+      "1 oz whiskey, 3 oz Apple Juice, 1/2 oz Honey Simple Syrup, Garnish Granny Smith Apple Slice",
     instructions:
       "Combine all ingredients, shake over ice, and add an apple slice for garnish.",
     cocktail_image:
@@ -360,9 +362,9 @@ app.locals.artists = [
     artist_liquor_fact:
       "Delacroix loved the drink, you can never go wrong with a classic.",
     ingredients:
-      "2 oz Scotch whisky, .75 oz sweet vermouth, 3-4 dashes Angostura bitters, Cherry for garnish",
+      "2 oz Scotch Whiskey, .75 oz Sweet Vermouth, 3-4 dashes Angostura Bitters, Garnish Cherry",
     instructions:
-      "Add all ingredients to a mixing glass with ice. Stir. Strain into a chilled cocktail glass.Garnish with a cocktail cherry.",
+      "Add all ingredients to a mixing glass with ice. Stir. Strain into a chilled cocktail glass. Garnish with a cocktail cherry.",
     cocktail_image:
       "https://vintageamericancocktails.com/wp-content/uploads/2021/07/rob_roy.jpeg",
   },
@@ -384,7 +386,7 @@ app.locals.artists = [
     artist_liquor_fact:
       "Rivera loved both food and drink and tried to lived life to the fullest.",
     ingredients:
-      "60 ml mezcal, 30 ml fresh lime juice, 20 ml hibiscus syrup, 2 drops of Hellfire Habanero Shrub",
+      "2 oz Mezcal, 1 oz Fresh Lime Juice, 2/3 oz Hibiscus Syrup, 2 drops of Hellfire Habanero Shrub",
     instructions:
       "Add all ingredients in a cocktail shaker with ice. Shake and double strain in a chilled coupette with a guajillo chilli salt rim. Garnish with a caramelised hibiscus flower in the drink.",
     cocktail_image:
@@ -395,7 +397,7 @@ app.locals.artists = [
     artist_name: "Alfred Kubin",
     born: "4/10/1877",
     died: "8/20/1959",
-    painting_title: "Colored nightmares",
+    painting_title: "Colored Nightmares",
     painting_image:
       "https://wahooart.com/Art.nsf/O/A29S22/$File/Alfred_Kubin-Colored_nightmares.JPG",
     artist_fact:
@@ -408,9 +410,9 @@ app.locals.artists = [
     artist_liquor_fact:
       "Nothing is written about Kubin's drinking habits, however Austria is known for Jagertee. Enjoy it with friends!",
     ingredients:
-      "4 Servings, 250 ml (1 cup) tea, 250 ml (1 cup) spiced rum, 250 ml (1 cup) red wine, 250 ml (1 cup) plum brandy, schnaps, or any other liqueur to hand, 250 ml (1 cup) orange juice, 2 to 3 whole cloves, 1/4 cinnamon stick, 2 lemon slices, sugar, to taste",
+      "4 Servings, 8 1/2 oz Tea, 8 1/2 oz Spiced Rum, 8 1/2 oz Red Wine, 8 1/2 oz Plum Brandy, Schnaps or any other liqueur to hand, 8 1/2 oz Orange Juice, 2 to 3 whole Cloves, 1/4 Cinnamon Stick, 2 Lemon Slices, Sugar to taste",
     instructions:
-      "Step 1/3, Add all the ingredients to a stainless steel pot except sugar. Step 2/3 Heat until simmering, then simmer for 5 minutes. Step 3/3 Take the pot off the heat, then add sugar to taste and stir to dissolve.",
+      "Add all the ingredients to a stainless steel pot except sugar. Heat until simmering, then simmer for 5 minutes. Take the pot off the heat, then add sugar to taste and stir to dissolve.",
     cocktail_image:
       "https://cdn.tasteatlas.com/images/ingredients/07b46b7f0ac64002be7b618c724a7464.jpg?mw=1300",
   },
@@ -432,7 +434,7 @@ app.locals.artists = [
     artist_liquor_fact:
       "Like many of his contemporaries, Manet enjoyed the company of Absinthe. Imbibe carefully!",
     ingredients:
-      "¾ oz Gin, ¾ oz Triple sec, ¾ oz Lemon, ¾ oz Lillet Blanc, As needed absinthe",
+      "3/4 oz Gin, 3/4 oz Triple Sec, 3/4 oz Lemon, 3/4 oz Lillet Blanc, Absinthe as needed",
     instructions:
       "Combine all ingredients in shaker tin, excluding absinthe. Ice small shaker tin. Shake vigorously, until tin is frosted over. Strain into chilled cocktail glass rinsed with absinthe. Garnish with lemon twist and enjoy",
     cocktail_image:
@@ -456,7 +458,7 @@ app.locals.artists = [
     artist_liquor_fact:
       "Being a man of the world inspired this artist's cocktail. A delicate mix of saki and brandi to inspire the world traveler.",
     ingredients:
-      "1 ounce Kurosawa nigori sake, 1/2 ounce St. George pear brandy, 1/4 ounce Singani 63 brandy, 1/4 ounce Distilleria Gualco Camomila liqueur, 1/2 ounce blackberry sage tea syrup* 4 dashes tartaric acid solution** Garnish: edible flowers",
+      "1 oz Kurosawa Nigori Sake, 1/2 oz St. George Pear Brandy, 1/4 oz Singani 63 brandy, 1/4 oz Distilleria Gualco Camomila liqueur, 1/2 oz Blackberry Sage Tea Syrup, 4 dashes Tartaric Acid Aolution, Garnish Edible Flowers",
     instructions:
       "Add the sake, pear brandy, Singani 63, chamomile liqueur, blackberry sage tea syrup and tartaric acid solution into a rocks glass. Fill with crushed ice and swizzle until chilled. Garnish with edible flowers.",
     cocktail_image:
@@ -478,12 +480,24 @@ app.locals.artists = [
     main_cocktail_liqour: "Rum",
     cocktail_name: "Daiquiri",
     artist_liquor_fact:
-      "Did Bosch drink? Who knows! The man lived during the Renaissance, try something inspired by the chaos of his work. You won't know what his you, when you try this classic daiquiri.",
+      "Did Bosch drink? Who knows! The man lived during the Renaissance, try something inspired by the chaos of his work. You won't know what hit you, when you try this classic daiquiri.",
     ingredients:
-      "1 ½ ounces (3 tablespoons) best quality light or white rum, 1 ounce (2 tablespoons) lime juice, ½ ounce (1 tablespoon) simple syrup or maple syrup, Lime slice, for garnish",
+      "1 1/2 oz Light or White Rum, 1 oz Lime Juice, 1/2 oz Simple Syrup or Maple Syrup, Garnish Lime Slice",
     instructions:
       "Add the rum, lime juice, and syrup to a cocktail shaker. Fill it with ice and shake until cold. Strain into a cocktail glass. Serve garnished with a lime slice.",
     cocktail_image:
       "https://www.acouplecooks.com/wp-content/uploads/2019/05/Daiquiri-Cocktail-013.jpg",
   },
 ];
+
+app.get("/api/v1/artists", (request, response) => {
+  const artists = app.locals.artists;
+
+  response.json({ resorts });
+});
+
+app.listen(app.get("port"), () => {
+  console.log(
+    `${app.locals.title} is running on http://localhost:${app.get("port")}`
+  );
+});
