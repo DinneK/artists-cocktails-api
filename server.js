@@ -102,8 +102,7 @@ app.locals.artists = [
       "1 oz Dubonnet Rouge, 1 oz Grand Marnier, 1 oz Scotch, Garnish with a Cherry",
     instructions:
       "Pour all ingredients into a mixing glass filled with ice. Stir. Strain into a cocktail glass. Garnish with a red cherry.",
-    cocktail_image:
-      "http://epicurevietnam.com/Data/Sites/1/media/bar_club/othercities/tippling-club/poker-game-840x600.jpg",
+    cocktail_image: "https://i.postimg.cc/zBfKnPQP/poker-game-840x600.jpg",
   },
   {
     id: 5,
