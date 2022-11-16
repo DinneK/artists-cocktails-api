@@ -427,7 +427,7 @@ app.locals.artists = [
     style: "Modernist",
     painting_year: 1864,
     favorite_liquor: "Absinthe",
-    main_cocktail_liqour: "Gin, Lillet Blanc, Absinthe",
+    main_cocktail_liqour: "Gin",
     cocktail_name: "Corpse Reviver #2",
     artist_liquor_fact:
       "Like many of his contemporaries, Manet enjoyed the company of Absinthe. Imbibe carefully!",
@@ -485,6 +485,242 @@ app.locals.artists = [
       "Add the rum, lime juice, and syrup to a cocktail shaker. Fill it with ice and shake until cold. Strain into a cocktail glass. Serve garnished with a lime slice.",
     cocktail_image:
       "https://www.acouplecooks.com/wp-content/uploads/2019/05/Daiquiri-Cocktail-013.jpg",
+  },
+  {
+    id: 21,
+    artist_name: "Betye Saar",
+    born: "7/30/1926",
+    died: "N/A",
+    painting_title: "Les Enfants d'Obscurité",
+    painting_image:
+      "https://www.moma.org/media/W1siZiIsIjQ0MDg3NSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=abab90695f78227d",
+    artist_fact:
+      "Saar was raised by her Aunt Hattie, who influenced her identity as a Black woman. Saar described her Aunt as a woman with dignity and poise, which impacted her depiction of the Black female body. This impact is evident in a work Saar dedicated to her Aunt titled, Record For Hattie, 1972.",
+    style: "Print",
+    painting_year: 1961,
+    favorite_liquor: "N/A",
+    main_cocktail_liqour: "Vodka",
+    cocktail_name: "Molotov Cocktail",
+    artist_liquor_fact:
+      "Saar's work has always been front and center, not her drinking habits. Why not try a drink as phenomenally incediary as her work?",
+    ingredients: "1 oz Vodka, 1/2 oz Bacardi 151 Proof Rum or Everclear",
+    instructions:
+      "Pour the vodka into a shot glass, float the rum on top using the back of a spoon. Ignite the rum with a match. Extinguish the flame. WARNINING: Consume. Wait until the flame dies out OR put out flame by sealing the rim with the palm of your hand or a napkin. DO NOT BLOW OUT FLAME, as the flaming alcohol may spatter on your face. Flaming drinks should ALWAYS be put out before consuming.",
+    cocktail_image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Flaming_cocktails.jpg/1200px-Flaming_cocktails.jpg",
+  },
+  {
+    id: 22,
+    artist_name: "Sofonisba Anguissola",
+    born: "1532",
+    died: "11/16/1625",
+    painting_title: "Self-portrait at an Easel",
+    painting_image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Self-portrait_at_the_Easel_Painting_a_Devotional_Panel_by_Sofonisba_Anguissola.jpg/885px-Self-portrait_at_the_Easel_Painting_a_Devotional_Panel_by_Sofonisba_Anguissola.jpg",
+    artist_fact:
+      "Anguissola is significant to feminist art historians. Although there has never been a period in Western history in which women were completely absent in the visual arts, Anguissola's great success opened the way for larger numbers of women to pursue serious careers as artists.",
+    style: "Renaissance",
+    painting_year: 1565,
+    favorite_liquor: "N/A",
+    main_cocktail_liqour: "Gin",
+    cocktail_name: "Renaissance Cocktail",
+    artist_liquor_fact:
+      "Who could possibly know about Anguissola's drinking habits, she lived during the Renaissance? Here's a cocktail inspired by the time period.",
+    ingredients:
+      "1/2 oz of Dry Sherry or Fortified Wine, 1 1/2 oz of Gin, 1 tbsp of Light Cream",
+    instructions:
+      "Shake with ice and strain into a cocktail glass. Sprinkle with nutmeg.",
+    cocktail_image:
+      "https://i.postimg.cc/wMb7DbQV/Screen-Shot-2022-11-13-at-7-26-20-PM.png",
+  },
+  {
+    id: 23,
+    artist_name: "June Leaf",
+    born: "1929",
+    died: "N/A",
+    painting_title: "Study for Ballroom with Hobby Horses",
+    painting_image:
+      "https://www.moma.org/media/W1siZiIsIjI3OTAyMSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=d78cff8c527f2de9",
+    artist_fact:
+      "She has lived for the past thirty years in New York City and Mabou, Cape Breton Island in Nova Scotia, Canada, with her husband, photographer Robert Frank (they sometimes collaborate, with Leaf painting and drawing on his photographs).",
+    style: "Abstraction",
+    painting_year: 1963,
+    favorite_liquor: "Beer",
+    main_cocktail_liqour: "Beer",
+    cocktail_name: "Beer",
+    artist_liquor_fact:
+      "A beer drinker, Leaf's creations are as whimsical as this bubbly beverage.",
+    ingredients: "1 Beer",
+    instructions: "Pour, enjoy.",
+    cocktail_image:
+      "https://www.outsideonline.com/wp-content/uploads/2022/10/pumpkin_beer-s.jpg",
+  },
+  {
+    id: 24,
+    artist_name: "Hayv Kahraman",
+    born: "1981",
+    died: "N/A",
+    painting_title: "Neurobust No 1",
+    painting_image:
+      "https://i.guim.co.uk/img/media/7405d211d93b99fbc5311cefcbed56565ed7491a/0_0_5983_6000/master/5983.jpg?width=620&quality=85&auto=format&fit=max&s=995070797a69f99f5be88b6f92f4c78b",
+    artist_fact:
+      "Born in Baghdad, Iraq in 1981 to Kurdish parents. During the Iran War, Hayv spent a lot of her time in the basement of her uncle's house. Her relatives would all huddle around candles and play card games.",
+    style: "Modern",
+    painting_year: 2021,
+    favorite_liquor: "N/A",
+    main_cocktail_liqour: "Arak",
+    cocktail_name: "Arak Attack",
+    artist_liquor_fact:
+      "Kahraman left Iraq at a tender age, the beauty of her work straddles cultures. Try a cocktail made with Iraq's national drink.",
+    ingredients: "1 1/2 oz Arak, 1/5 oz Grenadine, Orange Juice",
+    instructions:
+      "Pour the arak and the grenadine into a glass with ice. Top with orange juice and enjoy.",
+    cocktail_image:
+      "https://i.dailymail.co.uk/i/pix/2014/10/16/1413460634231_wps_52_arakattacl2_jpg.jpg",
+  },
+  {
+    id: 25,
+    artist_name: "Lorna Simpson",
+    born: "8/13/1960",
+    died: "N/A",
+    painting_title: "Polka Dot & Bullet Holes #2",
+    painting_image:
+      "https://img.huffingtonpost.com/asset/57eebb7d1b00007f08ef3921.jpeg?ops=crop_0_108_900_969%2Cscalefit_1280_noupscale&format=webp",
+    artist_fact:
+      "Simpson, who was born in Brooklyn and works there today, has employed a variety of media including photography, video, collage and painting to explore the relationship between image and identity, especially as it relates to race and gender. ",
+    style: "Mixed Media",
+    painting_year: 2016,
+    favorite_liquor: "N/A",
+    main_cocktail_liqour: "Vodka",
+    cocktail_name: "Easy, Breezy Lemon CBD Spritzer",
+    artist_liquor_fact:
+      "Artist Lorna Simpson moves between the micro- and the macro- but her work is always cosmic. Have a comic cocktail to go with your exploration of her work.",
+    ingredients:
+      "2-3 drops CBD Oil, 2 oz Lemon Vodka, 3/4 oz Lemon Juice, 3/4 oz Simple Syrup, 4 oz Champagne, Club Soda, Garnish Citrus Twist, Ice",
+    instructions:
+      "Fill a large stemmed wine glass with ice. Add all of the liquid ingredients to the glass. Stir gently with the cocktail spoon. Add a splash of club soda to the top without overfilling the glass. Finally, add the citrus twist for garnish before serving!",
+    cocktail_image:
+      "https://cbd.market/wp-content/uploads/2022/08/easy-breezy-lemon-cbd-spritzer-768x788.jpg",
+  },
+  {
+    id: 26,
+    artist_name: "Anna Park",
+    born: "1996",
+    died: "N/A",
+    painting_title: "Parent Teacher Conference",
+    painting_image:
+      "https://www.interviewmagazine.com/wp-content/uploads/2021/04/Parent-Teacher-Conference.jpg",
+    artist_fact:
+      "On chaos: “I’m probably a little chaotic, but always trying to make sense of through the chaos. That’s probably in my work—chaos, but restraint as well. Maybe that’s my personality too. It’s like I’m always trying to refrain from making an ass of myself.”",
+    style: "Contemporary",
+    painting_year: 2019,
+    favorite_liquor: "N/A",
+    main_cocktail_liqour: "Cognac",
+    cocktail_name: "The Hedonist",
+    artist_liquor_fact:
+      "Park known for her large scale charcoal works based on the hedonist in all us says she's happier as a hermit these days, but perhaps sipping this cocktail called the Hedonist while exlporing art  is just right for you to.",
+    ingredients:
+      "1 1/2 oz Cognac, 1/5 oz Oloroso Sherry, Splash Syrup from a jar of Cocktail Cherries, 2 dashes Orange Bitters, 1 1/5 oz Champagne, Garnish 1 Cocktail Cherry",
+    instructions:
+      "Stir the cognac, sherry, syrup and bitters in a champagne flute, top with fizz, garnish and serve.",
+    cocktail_image:
+      "https://i.guim.co.uk/img/media/a1c51fc02aa618ec97af2ebcd72f44eb1715498b/0_903_7760_4654/master/7760.jpg?width=620&quality=85&dpr=1&s=none",
+  },
+  {
+    id: 27,
+    artist_name: "Arghavaan Khosravi",
+    born: "1984",
+    died: "N/A",
+    painting_title: "Untitled",
+    painting_image:
+      "https://uploads-ssl.webflow.com/5bf590f72ee68227904bc68f/60227af5a21637caf7280ea8_IMG_9858.jpeg",
+    artist_fact:
+      "Arghavan Khosravi creates surrealist paintings that explore themes of exile, freedom, and empowerment. The artist’s enigmatic compositions center on women protagonists and allude to the restriction of human rights, particularly those of immigrants. Her work is both semiautobiographical and universal.",
+    style: "Surrealism",
+    painting_year: 2019,
+    favorite_liquor: "N/A",
+    main_cocktail_liqour: "Arak",
+    cocktail_name: "Ramallah Sunrise",
+    artist_liquor_fact:
+      "Aragh sagi, the national liquor of Iran, is a purer and stronger sort of Iranian arak distilled from raisins but without anise. Hard to find a good substitute is Arak.",
+    ingredients:
+      "1.5 oz Arak, 1/4 oz St. Germaine, 4 oz, Grapefruit Juice, Soda",
+    instructions:
+      "Combine arak, St. Germaine, and grapefruit. Shake and strain over ice in a Collins glass. Splash of soda to fill. Garnish with twist of lemon peel.",
+    cocktail_image:
+      "https://terrasanctatrading.com/wp-content/uploads/2014/06/Arak-Cocktail-Dos-Gatos-1024x682-500x350.jpg",
+  },
+  {
+    id: 28,
+    artist_name: "Caroline Larsen",
+    born: "1980",
+    died: "N/A",
+    painting_title: "Flower Still Life with Lillies",
+    painting_image:
+      "https://www.craigkrullgallery.com/Larsen/Images/Caroline-Larsen,-Flower-Still-Life-with-Lillies,-Oil-on-Canvas,-34-x-34-inches,-2019.jpg",
+    artist_fact:
+      "Caroline Larsen is a Toronto-based artist, whose work blends pixilated neo-impressionism with the idea of a tapestry. It is only when you take a closer look at her paintings that you realize they aren’t huge woven textiles but rather drawings composed by thick daubs of oil paint.",
+    style: "Neo-Impressionism",
+    painting_year: 2019,
+    favorite_liquor: "N/A",
+    main_cocktail_liqour: "Vodka",
+    cocktail_name: "Pea Flower Martini",
+    artist_liquor_fact:
+      "Inspired by the tapestry like paintings Larsen produces. Butterfly pea flower has a delicate tea-like flavor. The petals have a unique characteristic, when steeped in a liquid and combined with an acid, the mixture will turn from blue to bright pink. Once you have made the “brew”, add to drinks, teas and desserts for vibrant pink hues.",
+    ingredients:
+      "2 oz Vodka, 1/2 oz Triple Sec, 1 oz Butterfly Pea Flower Simple Syrup, 1 oz Freshly Squeezed Lemon Juice, Garnish Chilled Lemon Peel",
+    instructions:
+      "To a cocktail shaker filled halfway with ice, add vodka, triple sec, and pea flower simple syrup. Top with lid and shake for approximately 30 seconds until very cold. Strain into a chilled martini or cocktail glass. When ready to serve, pour in chilled lemon juice and watch the color change! Squeeze lemon peel over cocktail, then drop in as garnish.",
+    cocktail_image:
+      "https://assets.surlatable.com/m/56e3a634117f6e5f/webimage-REC-494129_martini.jpg",
+  },
+  {
+    id: 29,
+    artist_name: "Hannah van Bart",
+    born: "12/9/1963",
+    died: "N/A",
+    painting_title: "The Room",
+    painting_image:
+      "https://dza2a2ql7zktf.cloudfront.net/binaries-cdn/dqzqcuqf9/image/upload/c_fill,q_auto:good,w_716/v1574360393/mfp-fe-artworks/bapqfwd8jdzlovsvrzy4.jpg",
+    artist_fact:
+      "Amsterdam-based artist Hannah van Bart paints portraits, still lifes and landscapes, and cites the Dutch Golden Age artists as early inspiration to her practice. She brings together figures, interiors and exteriors as if to suggest there are no distinctions between the subjects.",
+    style: "Portraiture",
+    painting_year: 2018,
+    favorite_liquor: "N/A",
+    main_cocktail_liqour: "Genever",
+    cocktail_name: "The Dutch Oven",
+    artist_liquor_fact:
+      "Influenced by Amsterdam and van Bart's subtle work this cocktail has aromatic hints of bitter citrus.",
+    ingredients:
+      "2 sugar cubes, 3 dashes Peychaud's Bitters, 1 dash Regans' Orange Bitters, 2 oz Barrel Aged Bols Genever, Splash Soda, Garnish Grapefruit Twist",
+    instructions:
+      "Place sugar cubes, bitters, and soda water in a mixing glass. Muddle into a smooth paste. Add Genever, ice, and stir. Place ice ball or large ice cube in double old fashioned glass and strain cocktail over the ice. Squeeze grapefruit twist over the top and rub around the rim. Serve.",
+    cocktail_image:
+      "https://www.seriouseats.com/thmb/HfzsMkybLUbzqhQZZPokjaMEXow=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2012__02__20120212-the-hawthorne-06-63be063facee4638bfd4fe4d75782e28.jpeg",
+  },
+  {
+    id: 30,
+    artist_name: "Jennifer Packer",
+    born: "1984",
+    died: "N/A",
+    painting_title: "Idle Hands",
+    painting_image:
+      "https://www.culturetype.com/wp-content/uploads/2022/02/FEAT-Jennifer-Packer-Idle-Hands-2021.png",
+    artist_fact:
+      "“My inclination to paint, especially from life, is a completely political one. We belong here. We deserve to be seen and acknowledged in real time. We deserve to be heard and to be imaged with shameless generosity and accuracy.” – Jennifer Packer",
+    style: "Contemporary",
+    painting_year: 2021,
+    favorite_liquor: "N/A",
+    main_cocktail_liqour: "Bourbon",
+    cocktail_name: "The New York Sour",
+    artist_liquor_fact:
+      "Create for the city Packer calls home this drinks colors mimic the strokes of her work.",
+    ingredients:
+      "2 oz Bourbon, 1 oz Lemon Juice, 1/2 oz Simple Syrup, Splash Orange Juice, 1 oz Red Wine, Garnish Lemon or Orange wheel",
+    instructions:
+      "In a cocktail shaker, bourbon with lemon juice, simple syrup and a splash of orange juice. Shake until well combined, about 25 seconds. Pour into a glass, then slowly add the red wine to the top. Do not mix the wine with the rest of the contents. Garnish with a lemon or orange wheel.",
+    cocktail_image:
+      "https://www.thebittenword.com/.a/6a00e55015ee528833017d42ae0a9f970c-pi",
   },
 ];
 
