@@ -657,7 +657,7 @@ app.locals.artists = [
     died: "N/A",
     painting_title: "Flower Still Life with Lillies",
     painting_image:
-      "https://www.craigkrullgallery.com/Larsen/Images/Caroline-Larsen,-Flower-Still-Life-with-Lillies,-Oil-on-Canvas,-34-x-34-inches,-2019.jpg",
+      "https://mindysolomon.com/wp-content/uploads/2021/11/Caroline-Larsen-Checkers-Oil-on-Canvas-48-x-48-inches-2021-1030x824.jpg",
     artist_fact:
       "Caroline Larsen is a Toronto-based artist, whose work blends pixilated neo-impressionism with the idea of a tapestry. It is only when you take a closer look at her paintings that you realize they aren’t huge woven textiles but rather drawings composed by thick daubs of oil paint.",
     style: "Neo-Impressionism",
